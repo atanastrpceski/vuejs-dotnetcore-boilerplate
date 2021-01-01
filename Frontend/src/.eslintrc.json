@@ -1,0 +1,44 @@
+{
+  "root": true,
+  "env": {
+    "node": true
+  },
+  "parserOptions": {
+    "parser": "@typescript-eslint/parser"
+  },
+  "extends": [
+    "plugin:vue/essential",
+    "@vue/standard",
+    "@vue/typescript"
+  ],
+  "rules": {
+    "no-unused-vars": "off",
+    "vue/no-unused-vars": "off",
+    "no-useless-escape": "off",
+    "no-debugger": "off",
+    "semi": [
+      "error",
+      "always"
+    ],
+    "indent": [
+      2,
+      4
+    ],
+    "quotes": [
+      "error",
+      "double",
+      {
+        "avoidEscape": true,
+        "allowTemplateLiterals": true
+      }
+    ],
+    "space-before-function-paren": [
+      "error",
+      {
+        "anonymous": "always",
+        "named": "never",
+        "asyncArrow": "always"
+      }
+    ]
+  }
+}
